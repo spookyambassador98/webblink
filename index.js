@@ -8,7 +8,7 @@ const bodyparser = require('body-parser')
 app.use('/public', express.static(__dirname + '/public'))
 app.use('/', bodyparser.urlencoded({extended: false}))
 
-const esp32Url = 'http://10.0.0.242'; // Replace with your ESP32's local IP address
+const esp32Url = 'http://73.38.208.181'; // Replace with your ESP32's local IP address
 
 app.get('/led/on', async (req, res) => {
   try {
